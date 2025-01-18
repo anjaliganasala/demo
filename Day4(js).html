@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>BulbOn ... BulbOff --using Javascript</title>
+  </head>
+  <body>
+    <img src="bulb-off.gif" id="bulb" />
+
+    <button onclick="bulbOn('on')">ON</button>
+    <button onclick="bulbOn('off')">OFF</button>
+
+    <script>
+      function bulbOn(data) 
+      {
+        if (data == "on") 
+        {
+          document.getElementById("bulb").src = "bulb-on.gif";
+        } else {
+          document.getElementById("bulb").src = "bulb-off.gif";
+        }
+      }
+    </script>
+  </body>
+</html>
